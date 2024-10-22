@@ -1,6 +1,5 @@
 # inventory_system.py
 
-import numpy as np
 from copy import deepcopy
 
 
@@ -70,7 +69,7 @@ def find_most_expensive_item(inventory):
     """
     Find and return the most expensive item in the inventory.
     """
-    max_price = -np.inf
+    max_price = float('-inf')
     expensive_item = None 
 
     for _, items in inventory.items():
