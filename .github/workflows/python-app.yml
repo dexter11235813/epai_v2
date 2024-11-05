@@ -16,6 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-    - name: Test with unittest
+        pip install pytest==8.3.3
+    - name: Test with pytest
       run: |
-        python week_2/test_merge_validate.py
+        pytest week_2/test_merge_validate.py
